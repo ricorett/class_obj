@@ -6,6 +6,9 @@
 
 class Counter {
 public:
+  Counter(int start_count){
+    counter = start_count;
+  };
   int count_plus();
   int count_minus();
   int get_count();

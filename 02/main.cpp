@@ -2,7 +2,7 @@
 
 int main() {
 
-  Counter first_count;
+  
 
   std::string input;
   int start_count = 0;
@@ -20,20 +20,18 @@ int main() {
       std::cin >> start_count;
       std::cin.clear();
       std::cin.ignore(std::numeric_limits<std::streamsize>::max(), '\n');
-
-      first_count.set_count(start_count);
       break;
 
     } else if (input == "нет") {
 
       start_count = 1;
-      first_count.set_count(start_count);
       break;
     } else {
       std::cout << "Error Input. Try Again" << std::endl;
     }
   }
-
+  
+  Counter first_count(start_count);
   char input_comand;
 
   while (input_comand != 'x') {
