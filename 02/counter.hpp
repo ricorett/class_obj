@@ -3,6 +3,7 @@
 
 #include <iostream>
 #include <string>
+#include <limits>
 
 class Counter {
 public:
@@ -12,7 +13,6 @@ public:
   int count_plus();
   int count_minus();
   int get_count();
-  void set_count(int start_count);
 
 private:
   int counter;
