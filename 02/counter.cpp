@@ -1,4 +1,7 @@
 #include "counter.hpp"
+  Counter::Counter(int start_count){
+    counter = start_count;
+  };
 
 int Counter::count_plus() { return ++counter; }
 
